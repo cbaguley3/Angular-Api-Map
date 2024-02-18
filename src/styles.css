@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  background-color: #141414;
+  margin: 10px;
+  padding: 5px;
+  color: azure;
+}
+
+svg {
+  width: 70%;
+  height: 100%;
+}
+
+svg path {
+  fill: #230046;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+svg path:hover {
+  fill: #320064;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.parent p {
+  text-align: center;
+}
